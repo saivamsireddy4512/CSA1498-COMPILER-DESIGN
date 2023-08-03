@@ -1,0 +1,21 @@
+%{
+#include<stdio.h>
+#include<stdlib.h>
+%}
+
+%%
+[0-9]+{printf("It is constant");}
+.+{printf("It is not a constant");}
+
+%%
+
+int yywrap()
+{}
+
+int main()
+{
+
+printf("\n enter the input:");
+yylex();
+return 0;
+}
