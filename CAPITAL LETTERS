@@ -1,0 +1,17 @@
+%{
+%}
+
+%%
+[A-Z]{printf("\n is a capitial letter");}
+.+{printf("\n is not a capitial letter");}
+%%
+
+int yywrap()
+{}
+
+
+int main()
+{
+printf("\n enter a string:");
+yylex();
+}
